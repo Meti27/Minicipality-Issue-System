@@ -1,0 +1,51 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - img [ref=e6]
+    - heading "Municipality Issue System" [level=1] [ref=e8]
+    - paragraph [ref=e9]: Submit, track, and resolve infrastructure complaints in your community — transparently and efficiently.
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - paragraph [ref=e12]: "6"
+        - paragraph [ref=e13]: Categories
+      - generic [ref=e14]:
+        - paragraph [ref=e15]: 100%
+        - paragraph [ref=e16]: Transparent
+      - generic [ref=e17]:
+        - paragraph [ref=e18]: 24/7
+        - paragraph [ref=e19]: Available
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - img [ref=e23]
+        - generic [ref=e25]: Report potholes, broken lights & more
+      - generic [ref=e26]:
+        - img [ref=e28]
+        - generic [ref=e30]: Track your complaint in real time
+      - generic [ref=e31]:
+        - img [ref=e33]
+        - generic [ref=e35]: Get notified on every status update
+  - generic [ref=e36]:
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - heading "Welcome back" [level=2] [ref=e39]
+        - paragraph [ref=e40]: Sign in to your municipality account
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - generic [ref=e43]: Email address
+          - textbox "Email address" [active] [ref=e44]
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - generic [ref=e47]: Password
+            - link "Forgot password?" [ref=e48] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/forgot-password
+          - textbox "Password" [ref=e49]
+        - generic [ref=e50]:
+          - checkbox "Remember me" [ref=e51]
+          - generic [ref=e52]: Remember me
+        - button "Sign In" [ref=e53] [cursor=pointer]
+        - paragraph [ref=e54]:
+          - text: Don't have an account?
+          - link "Register here" [ref=e55] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/register
+    - paragraph [ref=e56]:
+      - link "← Back to home" [ref=e57] [cursor=pointer]:
+        - /url: /

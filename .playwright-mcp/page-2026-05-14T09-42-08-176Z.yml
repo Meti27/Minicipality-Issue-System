@@ -1,0 +1,45 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: 🏛 Municipality Issue System
+      - generic [ref=e5]:
+        - link "Log In" [ref=e6] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/login
+        - link "Register" [ref=e7] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/register
+  - generic [ref=e9]:
+    - heading "Report. Track. Resolve." [level=1] [ref=e10]
+    - paragraph [ref=e11]: Submit infrastructure complaints — potholes, broken streetlights, water leaks and more — and track them from submission to resolution in real time.
+    - generic [ref=e12]:
+      - link "Register as a Citizen" [ref=e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/register
+      - link "Log In" [ref=e14] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/login
+  - generic [ref=e16]:
+    - generic [ref=e17]:
+      - img [ref=e19]
+      - heading "Easy Submission" [level=3] [ref=e21]
+      - paragraph [ref=e22]: Fill in a simple form with a description, location, and optional photo. Your complaint is logged instantly.
+    - generic [ref=e23]:
+      - img [ref=e25]
+      - heading "Real-Time Tracking" [level=3] [ref=e27]
+      - paragraph [ref=e28]: Watch your complaint move through review, validation, in-progress, and resolution — with full status history.
+    - generic [ref=e29]:
+      - img [ref=e31]
+      - heading "Instant Notifications" [level=3] [ref=e33]
+      - paragraph [ref=e34]: Get notified every time municipality staff updates the status of your complaint.
+  - generic [ref=e36]:
+    - heading "Complaint Lifecycle" [level=2] [ref=e37]
+    - generic [ref=e38]:
+      - generic [ref=e39]: Submitted
+      - generic [ref=e40]: →
+      - generic [ref=e41]: Pending Review
+      - generic [ref=e42]: →
+      - generic [ref=e43]: Validated
+      - generic [ref=e44]: →
+      - generic [ref=e45]: In Progress
+      - generic [ref=e46]: →
+      - generic [ref=e47]: Resolved
+      - generic [ref=e48]: →
+      - generic [ref=e49]: Closed
+  - contentinfo [ref=e50]: © 2026 Municipality Issue System. University Software Engineering Project.

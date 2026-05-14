@@ -1,0 +1,123 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - img [ref=e8]
+        - generic [ref=e10]: Method Not Allowed
+      - button [ref=e13] [cursor=pointer]:
+        - img [ref=e14]
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - generic [ref=e21]: Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException
+          - generic [ref=e22]: "The GET method is not supported for route logout. Supported methods: POST."
+        - generic [ref=e23]:
+          - generic [ref=e25]: GET 127.0.0.1:8000
+          - generic [ref=e26]: PHP 8.5.5 — Laravel 11.51.0
+      - generic [ref=e29]:
+        - generic [ref=e31]:
+          - button "Expand vendor frames" [ref=e33] [cursor=pointer]:
+            - generic [ref=e34]: Expand
+            - generic [ref=e35]: vendor frames
+            - generic [ref=e36]:
+              - img [ref=e37]
+              - img [ref=e39]
+          - generic [ref=e41]:
+            - generic [ref=e43]: 29 vendor frames collapsed
+            - button "public/index.php :17 require_once" [ref=e44] [cursor=pointer]:
+              - generic [ref=e46]:
+                - generic [ref=e48]:
+                  - generic [ref=e49]: public/index.php
+                  - generic [ref=e50]: :17
+                - generic [ref=e51]: require_once
+            - generic [ref=e53]: 1 vendor frame collapsed
+        - text: 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 758 759 760 761 762 763 764 765 766 767 768 769 770 771 772 773 774 775 745 746 747 748 749 750 751 752 753 754 755 756 757 758 759 760 761 734 735 736 737 738 739 740 741 742 743 744 745 746 747 748 749 750 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 1215 1216 1217 1218 1219 1220 1221 1222 1223 1224 1225 1226 1227 1228 1229 1230 1231 1232
+        - generic [ref=e54]:
+          - generic [ref=e57]: public/index.php :17
+          - code [ref=e60]:
+            - table [ref=e61]:
+              - rowgroup [ref=e62]:
+                - row "12 // Register the Composer autoloader..." [ref=e63]:
+                  - cell "12" [ref=e64]:
+                    - generic [ref=e65]: "12"
+                  - cell "// Register the Composer autoloader..." [ref=e66]
+                - row "13 require __DIR__.'/../vendor/autoload.php';" [ref=e67]:
+                  - cell "13" [ref=e68]:
+                    - generic [ref=e69]: "13"
+                  - cell "require __DIR__.'/../vendor/autoload.php';" [ref=e70]
+                - row "14" [ref=e71]:
+                  - cell "14" [ref=e72]:
+                    - generic [ref=e73]: "14"
+                  - cell [ref=e74]
+                - row "15 // Bootstrap Laravel and handle the request..." [ref=e75]:
+                  - cell "15" [ref=e76]:
+                    - generic [ref=e77]: "15"
+                  - cell "// Bootstrap Laravel and handle the request..." [ref=e78]
+                - row "16 (require_once __DIR__.'/../bootstrap/app.php')" [ref=e79]:
+                  - cell "16" [ref=e80]:
+                    - generic [ref=e81]: "16"
+                  - cell "(require_once __DIR__.'/../bootstrap/app.php')" [ref=e82]
+                - row "17 ->handleRequest(Request::capture());" [ref=e83]:
+                  - cell "17" [ref=e84]:
+                    - generic [ref=e85]: "17"
+                  - cell "->handleRequest(Request::capture());" [ref=e86]
+        - text: 18 19 20 21 22 23
+      - generic [ref=e87]:
+        - generic [ref=e88]: Request
+        - generic [ref=e89]: GET /logout
+        - generic [ref=e90]: Headers
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - generic [ref=e93] [cursor=pointer]: host
+            - code [ref=e96]: 127.0.0.1:8000
+          - generic [ref=e97]:
+            - generic [ref=e98] [cursor=pointer]: connection
+            - code [ref=e101]: keep-alive
+          - generic [ref=e102]:
+            - generic [ref=e103] [cursor=pointer]: sec-ch-ua
+            - code [ref=e106]: "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Google Chrome\";v=\"144\""
+          - generic [ref=e107]:
+            - generic [ref=e108] [cursor=pointer]: sec-ch-ua-mobile
+            - code [ref=e111]: "?0"
+          - generic [ref=e112]:
+            - generic [ref=e113] [cursor=pointer]: sec-ch-ua-platform
+            - code [ref=e116]: "\"Linux\""
+          - generic [ref=e117]:
+            - generic [ref=e118] [cursor=pointer]: upgrade-insecure-requests
+            - code [ref=e121]: "1"
+          - generic [ref=e122]:
+            - generic [ref=e123] [cursor=pointer]: user-agent
+            - code [ref=e126]: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+          - generic [ref=e127]:
+            - generic [ref=e128] [cursor=pointer]: accept
+            - code [ref=e131]: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+          - generic [ref=e132]:
+            - generic [ref=e133] [cursor=pointer]: sec-fetch-site
+            - code [ref=e136]: none
+          - generic [ref=e137]:
+            - generic [ref=e138] [cursor=pointer]: sec-fetch-mode
+            - code [ref=e141]: navigate
+          - generic [ref=e142]:
+            - generic [ref=e143] [cursor=pointer]: sec-fetch-user
+            - code [ref=e146]: "?1"
+          - generic [ref=e147]:
+            - generic [ref=e148] [cursor=pointer]: sec-fetch-dest
+            - code [ref=e151]: document
+          - generic [ref=e152]:
+            - generic [ref=e153] [cursor=pointer]: accept-encoding
+            - code [ref=e156]: gzip, deflate, br, zstd
+          - generic [ref=e157]:
+            - generic [ref=e158] [cursor=pointer]: accept-language
+            - code [ref=e161]: en-US,en;q=0.9
+          - generic [ref=e162]:
+            - generic [ref=e163] [cursor=pointer]: cookie
+            - code [ref=e166]: XSRF-TOKEN=eyJpdiI6ImhLNldDcW1wa0ExYThNcFJ6SnpYakE9PSIsInZhbHVlIjoiZ1NmT1JYRVBtbXZHREcrUy9seWRnb2MyejlTcHM2NFd6REhHd29kR2tBR2dJcUFScVUyZDJWUGUzcXZ3aG5Nem5vT2NTYzJvTGR1K29STDRDTlBReDV4ejNCb0JvZ2xUSDhVT052RVpMLzBHQmRuZ1ZJR1g0WlMyWHd4dFNpRm8iLCJtYWMiOiJiN2IxNmRlMTczMGU0MDU0MDhiM2RlNzkwZWVkNTliMDcwN2FjZTNiZTY3ZGIwZjdkNzFiMTk4MmUwNDRhODgwIiwidGFnIjoiIn0%3D; municipality_issue_system_session=eyJpdiI6IndqWjFFMWR6QWpIMVBtN1hiRU1xRWc9PSIsInZhbHVlIjoiYXhvQ2R5VitZNDcvWlA2ZEJLcmdsUDRVclk2SUlvckZjaEJIY2hXVjBDQ29CdE5pTW03cUJxQzRoRzNuMTBJV0xSay9UTTdnbmF3bzYzanB5Y3lPbGY1dTB6UmJHRC96L2poRE9rd2szdU5IZHBEd2NUcFNoOGhiZmc4ekpucTkiLCJtYWMiOiIxZWM4NDA5MjIyOTRjMzYwMjY2YjJlMDY3YjgxZTllNmNiMzNmM2FkY2Y2NmYxNzg5Y2JmNzY1NzYxMDhjYjNiIiwidGFnIjoiIn0%3D
+        - generic [ref=e167]: Body
+        - code [ref=e172]: No body data
+      - generic [ref=e173]:
+        - generic [ref=e174]: Application
+        - generic [ref=e175]: Routing
+        - code [ref=e179]: No routing data
+        - generic [ref=e180]: Database Queries
+        - code [ref=e184]: No query data

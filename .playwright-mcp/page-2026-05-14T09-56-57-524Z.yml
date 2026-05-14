@@ -1,0 +1,80 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Municipality IS" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+        - generic [ref=e8]: Municipality IS
+      - link "Go to Dashboard" [ref=e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/dashboard
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - heading "Report. Track. Resolve." [level=1] [ref=e13]:
+        - text: Report. Track.
+        - text: Resolve.
+      - paragraph [ref=e14]: Submit infrastructure complaints — potholes, broken streetlights, water leaks and more — and follow every step from submission to resolution in real time.
+      - link "Go to Dashboard" [ref=e15] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/dashboard
+        - text: Go to Dashboard
+        - img [ref=e16]
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - paragraph [ref=e20]: "6"
+          - paragraph [ref=e21]: Issue Categories
+        - generic [ref=e22]:
+          - paragraph [ref=e23]: 100%
+          - paragraph [ref=e24]: Transparent Process
+        - generic [ref=e25]:
+          - paragraph [ref=e26]: 24/7
+          - paragraph [ref=e27]: Online Tracking
+    - img [ref=e29]
+  - generic [ref=e32]:
+    - generic [ref=e33]:
+      - heading "Everything you need to report issues" [level=2] [ref=e34]
+      - paragraph [ref=e35]: A simple, transparent process from complaint to resolution.
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - img [ref=e39]
+        - heading "Easy Submission" [level=3] [ref=e41]
+        - paragraph [ref=e42]: Fill in a simple form with a title, location, and optional photo. Your complaint is logged instantly and assigned a tracking ID.
+      - generic [ref=e43]:
+        - img [ref=e45]
+        - heading "Real-Time Tracking" [level=3] [ref=e47]
+        - paragraph [ref=e48]: Watch your complaint move through review, validation, in-progress, and resolution stages — with a full timestamped status history.
+      - generic [ref=e49]:
+        - img [ref=e51]
+        - heading "Instant Notifications" [level=3] [ref=e53]
+        - paragraph [ref=e54]: Receive in-app notifications every time municipality staff updates the status of your complaint — no need to check manually.
+  - generic [ref=e56]:
+    - generic [ref=e57]:
+      - heading "How it works" [level=2] [ref=e58]
+      - paragraph [ref=e59]: Three simple steps from problem to resolution.
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - generic [ref=e62]: "01"
+        - heading "Submit a Complaint" [level=3] [ref=e63]
+        - paragraph [ref=e64]: Create a free account and submit your complaint with a description, location, and optional photo.
+      - generic [ref=e65]:
+        - generic [ref=e66]: "02"
+        - heading "Staff Reviews" [level=3] [ref=e67]
+        - paragraph [ref=e68]: Municipality staff validates your complaint and assigns it to the appropriate department.
+      - generic [ref=e69]:
+        - generic [ref=e70]: "03"
+        - heading "Issue Resolved" [level=3] [ref=e71]
+        - paragraph [ref=e72]: Track progress and receive notifications when the issue is resolved. Transparent and accountable.
+  - generic [ref=e74]:
+    - heading "Complaint Lifecycle" [level=2] [ref=e75]
+    - paragraph [ref=e76]: Every complaint follows a transparent, traceable process.
+    - generic [ref=e77]:
+      - generic [ref=e78]: Submitted
+      - img [ref=e79]
+      - generic [ref=e81]: Pending Review
+      - img [ref=e82]
+      - generic [ref=e84]: Validated
+      - img [ref=e85]
+      - generic [ref=e87]: In Progress
+      - img [ref=e88]
+      - generic [ref=e90]: Resolved
+      - img [ref=e91]
+      - generic [ref=e93]: Closed
+  - contentinfo [ref=e94]: © 2026 Municipality Issue System — University Software Engineering Project.

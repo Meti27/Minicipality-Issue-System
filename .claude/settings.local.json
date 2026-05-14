@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__playwright",
+      "Bash(php --version)",
+      "Bash(composer --version)",
+      "Bash(npm --version)",
+      "Bash(composer create-project *)",
+      "Bash(composer require *)",
+      "Bash(php artisan *)",
+      "Bash(systemctl is-active *)",
+      "Bash(mysqladmin ping *)",
+      "Bash(mysql *)",
+      "Bash(sudo mysql *)",
+      "Bash(php -l /home/meti/PhpstormProjects/MunicipalityIssueSystem/app/Http/Controllers/Citizen/ComplaintController.php)",
+      "Bash(php -l /home/meti/PhpstormProjects/MunicipalityIssueSystem/app/Http/Middleware/RoleMiddleware.php)",
+      "Bash(php -l /home/meti/PhpstormProjects/MunicipalityIssueSystem/routes/web.php)",
+      "Bash(php -l /home/meti/PhpstormProjects/MunicipalityIssueSystem/app/Http/Controllers/Staff/ComplaintController.php)",
+      "Bash(php -l /home/meti/PhpstormProjects/MunicipalityIssueSystem/app/Http/Requests/UpdateComplaintStatusRequest.php)",
+      "Bash(php -l /home/meti/PhpstormProjects/MunicipalityIssueSystem/app/Http/Controllers/Admin/DashboardController.php)",
+      "Bash(php -l /home/meti/PhpstormProjects/MunicipalityIssueSystem/app/Http/Controllers/Admin/UserController.php)",
+      "Bash(php -l /home/meti/PhpstormProjects/MunicipalityIssueSystem/app/Http/Controllers/Admin/CategoryController.php)",
+      "Bash(php -l /home/meti/PhpstormProjects/MunicipalityIssueSystem/app/Http/Controllers/Citizen/NotificationController.php)",
+      "Bash(npm run *)"
+    ]
+  }
+}

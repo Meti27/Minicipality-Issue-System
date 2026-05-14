@@ -1,0 +1,79 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "Municipality IS" [ref=e7] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/dashboard
+          - img [ref=e9]
+          - generic [ref=e11]: Municipality IS
+        - generic [ref=e12]:
+          - link "Dashboard" [ref=e13] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/dashboard
+          - link "Users" [ref=e14] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/users
+          - link "Categories" [ref=e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/categories
+      - button "S System Administrator Admin" [ref=e19] [cursor=pointer]:
+        - generic [ref=e20]: S
+        - generic [ref=e21]: System Administrator
+        - generic [ref=e22]: Admin
+        - img [ref=e23]
+  - banner [ref=e25]:
+    - generic [ref=e27]:
+      - heading "User Management" [level=2] [ref=e28]
+      - link "+ Create Account" [ref=e29] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/users/create
+  - main [ref=e30]:
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: Search
+          - textbox "Name or email…" [ref=e36]
+        - generic [ref=e37]:
+          - generic [ref=e38]: Role
+          - combobox [ref=e39]:
+            - option "All roles" [selected]
+            - option "Citizen"
+            - option "Staff"
+            - option "Admin"
+        - generic [ref=e40]:
+          - button "Filter" [ref=e41] [cursor=pointer]
+          - link "Clear" [ref=e42] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/users
+      - table [ref=e44]:
+        - rowgroup [ref=e45]:
+          - row "Name Email Role Status Joined Complaints" [ref=e46]:
+            - columnheader "Name" [ref=e47]
+            - columnheader "Email" [ref=e48]
+            - columnheader "Role" [ref=e49]
+            - columnheader "Status" [ref=e50]
+            - columnheader "Joined" [ref=e51]
+            - columnheader "Complaints" [ref=e52]
+            - columnheader [ref=e53]
+        - rowgroup [ref=e54]:
+          - row "Staff Member staff@municipality.gov Staff Active 14 May 2026 0 Deactivate" [ref=e55]:
+            - cell "Staff Member" [ref=e56]
+            - cell "staff@municipality.gov" [ref=e57]
+            - cell "Staff" [ref=e58]
+            - cell "Active" [ref=e59]
+            - cell "14 May 2026" [ref=e60]
+            - cell "0" [ref=e61]
+            - cell "Deactivate" [ref=e62]:
+              - button "Deactivate" [ref=e64] [cursor=pointer]
+          - row "Meti metiseni27@gmail.com Citizen Active 14 May 2026 0 Deactivate" [ref=e65]:
+            - cell "Meti" [ref=e66]
+            - cell "metiseni27@gmail.com" [ref=e67]
+            - cell "Citizen" [ref=e68]
+            - cell "Active" [ref=e69]
+            - cell "14 May 2026" [ref=e70]
+            - cell "0" [ref=e71]
+            - cell "Deactivate" [ref=e72]:
+              - button "Deactivate" [ref=e74] [cursor=pointer]
+          - row "System Administrator admin@municipality.gov Admin Active 14 May 2026 0" [ref=e75]:
+            - cell "System Administrator" [ref=e76]
+            - cell "admin@municipality.gov" [ref=e77]
+            - cell "Admin" [ref=e78]
+            - cell "Active" [ref=e79]
+            - cell "14 May 2026" [ref=e80]
+            - cell "0" [ref=e81]
+            - cell [ref=e82]

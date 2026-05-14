@@ -1,0 +1,80 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "Municipality IS" [ref=e7] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/dashboard
+          - img [ref=e9]
+          - generic [ref=e11]: Municipality IS
+        - generic [ref=e12]:
+          - link "Dashboard" [ref=e13] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/dashboard
+          - link "Users" [ref=e14] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/users
+          - link "Categories" [ref=e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/admin/categories
+      - button "S System Administrator Admin" [ref=e19] [cursor=pointer]:
+        - generic [ref=e20]: S
+        - generic [ref=e21]: System Administrator
+        - generic [ref=e22]: Admin
+        - img [ref=e23]
+  - banner [ref=e25]:
+    - generic [ref=e27]:
+      - heading "Category Management" [level=2] [ref=e28]
+      - link "+ New Category" [ref=e29] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/categories/create
+  - main [ref=e30]:
+    - table [ref=e34]:
+      - rowgroup [ref=e35]:
+        - row "Name Description Complaints Status" [ref=e36]:
+          - columnheader "Name" [ref=e37]
+          - columnheader "Description" [ref=e38]
+          - columnheader "Complaints" [ref=e39]
+          - columnheader "Status" [ref=e40]
+          - columnheader [ref=e41]
+      - rowgroup [ref=e42]:
+        - row "Potholes Road surface damage and pothole complaints 0 Active Edit Deactivate" [ref=e43]:
+          - cell "Potholes" [ref=e44]
+          - cell "Road surface damage and pothole complaints" [ref=e45]
+          - cell "0" [ref=e46]
+          - cell "Active" [ref=e47]
+          - cell "Edit Deactivate" [ref=e48]:
+            - link "Edit" [ref=e49] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/admin/categories/1/edit
+            - button "Deactivate" [ref=e51] [cursor=pointer]
+        - row "Streetlights Broken, flickering, or missing streetlights 0 Active Edit Deactivate" [ref=e52]:
+          - cell "Streetlights" [ref=e53]
+          - cell "Broken, flickering, or missing streetlights" [ref=e54]
+          - cell "0" [ref=e55]
+          - cell "Active" [ref=e56]
+          - cell "Edit Deactivate" [ref=e57]:
+            - link "Edit" [ref=e58] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/admin/categories/2/edit
+            - button "Deactivate" [ref=e60] [cursor=pointer]
+        - row "Garbage Uncollected waste, illegal dumping, overflowing bins 0 Active Edit Deactivate" [ref=e61]:
+          - cell "Garbage" [ref=e62]
+          - cell "Uncollected waste, illegal dumping, overflowing bins" [ref=e63]
+          - cell "0" [ref=e64]
+          - cell "Active" [ref=e65]
+          - cell "Edit Deactivate" [ref=e66]:
+            - link "Edit" [ref=e67] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/admin/categories/3/edit
+            - button "Deactivate" [ref=e69] [cursor=pointer]
+        - row "Water Leaks Burst pipes, water main leaks, water waste 0 Active Edit Deactivate" [ref=e70]:
+          - cell "Water Leaks" [ref=e71]
+          - cell "Burst pipes, water main leaks, water waste" [ref=e72]
+          - cell "0" [ref=e73]
+          - cell "Active" [ref=e74]
+          - cell "Edit Deactivate" [ref=e75]:
+            - link "Edit" [ref=e76] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/admin/categories/4/edit
+            - button "Deactivate" [ref=e78] [cursor=pointer]
+        - row "Damaged Roads Road cracks, missing signage, damaged road markings 0 Active Edit Deactivate" [ref=e79]:
+          - cell "Damaged Roads" [ref=e80]
+          - cell "Road cracks, missing signage, damaged road markings" [ref=e81]
+          - cell "0" [ref=e82]
+          - cell "Active" [ref=e83]
+          - cell "Edit Deactivate" [ref=e84]:
+            - link "Edit" [ref=e85] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/admin/categories/5/edit
+            - button "Deactivate" [ref=e87] [cursor=pointer]

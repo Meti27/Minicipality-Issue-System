@@ -1,0 +1,93 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - generic [ref=e8]:
+        - link "Sign In" [ref=e9] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/login
+        - link "Get Started" [ref=e10] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/register
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]: Open to all citizens · Free to use
+      - heading "Report. Track. Resolve." [level=1] [ref=e14]
+      - paragraph [ref=e15]: Submit infrastructure complaints — potholes, broken streetlights, water leaks and more — and follow every step from submission to resolution in real time.
+      - generic [ref=e16]:
+        - link "Register as a Citizen" [ref=e17] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/register
+          - img [ref=e18]
+          - text: Register as a Citizen
+        - link "Sign In" [ref=e20] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/login
+          - text: Sign In
+          - img [ref=e21]
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - paragraph [ref=e25]: "6"
+          - paragraph [ref=e26]: Issue Categories
+        - generic [ref=e27]:
+          - paragraph [ref=e28]: 100%
+          - paragraph [ref=e29]: Transparent Process
+        - generic [ref=e30]:
+          - paragraph [ref=e31]: 24/7
+          - paragraph [ref=e32]: Online Tracking
+    - img [ref=e34]
+  - generic [ref=e37]:
+    - generic [ref=e38]:
+      - heading "Everything you need to report issues" [level=2] [ref=e39]
+      - paragraph [ref=e40]: A simple, transparent process from complaint to resolution.
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - img [ref=e44]
+        - heading "Easy Submission" [level=3] [ref=e46]
+        - paragraph [ref=e47]: Fill in a simple form with a title, location, and optional photo. Your complaint is logged instantly and assigned a tracking ID.
+      - generic [ref=e48]:
+        - img [ref=e50]
+        - heading "Real-Time Tracking" [level=3] [ref=e52]
+        - paragraph [ref=e53]: Watch your complaint move through review, validation, in-progress, and resolution stages — with a full timestamped status history.
+      - generic [ref=e54]:
+        - img [ref=e56]
+        - heading "Instant Notifications" [level=3] [ref=e58]
+        - paragraph [ref=e59]: Receive in-app notifications every time municipality staff updates the status of your complaint — no need to check manually.
+  - generic [ref=e61]:
+    - generic [ref=e62]:
+      - heading "How it works" [level=2] [ref=e63]
+      - paragraph [ref=e64]: Three simple steps from problem to resolution.
+    - generic [ref=e65]:
+      - generic [ref=e66]:
+        - generic [ref=e67]: "01"
+        - heading "Submit a Complaint" [level=3] [ref=e68]
+        - paragraph [ref=e69]: Create a free account and submit your complaint with a description, location, and optional photo.
+      - generic [ref=e70]:
+        - generic [ref=e71]: "02"
+        - heading "Staff Reviews" [level=3] [ref=e72]
+        - paragraph [ref=e73]: Municipality staff validates your complaint and assigns it to the appropriate department.
+      - generic [ref=e74]:
+        - generic [ref=e75]: "03"
+        - heading "Issue Resolved" [level=3] [ref=e76]
+        - paragraph [ref=e77]: Track progress and receive notifications when the issue is resolved. Transparent and accountable.
+  - generic [ref=e79]:
+    - heading "Complaint Lifecycle" [level=2] [ref=e80]
+    - paragraph [ref=e81]: Every complaint follows a transparent, traceable process.
+    - generic [ref=e82]:
+      - generic [ref=e83]: Submitted
+      - img [ref=e84]
+      - generic [ref=e86]: Pending Review
+      - img [ref=e87]
+      - generic [ref=e89]: Validated
+      - img [ref=e90]
+      - generic [ref=e92]: In Progress
+      - img [ref=e93]
+      - generic [ref=e95]: Resolved
+      - img [ref=e96]
+      - generic [ref=e98]: Closed
+  - generic [ref=e100]:
+    - heading "Ready to report an issue?" [level=2] [ref=e101]
+    - paragraph [ref=e102]: Join citizens who are already using the platform to improve their community.
+    - link "Get Started — It's Free" [ref=e103] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/register
+      - text: Get Started — It's Free
+      - img [ref=e104]
+  - contentinfo [ref=e106]: © 2026 Municipality Issue System — University Software Engineering Project.
