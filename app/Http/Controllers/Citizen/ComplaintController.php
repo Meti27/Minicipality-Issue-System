@@ -9,6 +9,7 @@ use App\Models\Complaint;
 use App\Models\ComplaintStatusHistory;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
+use Illuminate\Http\Request;
 
 class ComplaintController extends Controller
 {
@@ -33,15 +34,22 @@ class ComplaintController extends Controller
         return view('citizen.dashboard', compact('stats', 'recentComplaints'));
     }
 
-    public function index(): View
+    public function index(Request $request): View
     {
+        $categories = Category::where('is_active', true)->orderBy('name')->get();
+
         $complaints = auth()->user()->complaints()
             ->with('category')
+            ->when($request->status, fn($q) => $q->where('status', $request->status))
+            ->when($request->category_id, fn($q) => $q->where('category_id', $request->category_id))
+            ->when($request->date_from, fn($q) => $q->whereDate('created_at', '>=', $request->date_from))
+            ->when($request->date_to, fn($q) => $q->whereDate('created_at', '<=', $request->date_to))
             ->latest()
             ->paginate(10);
 
-        return view('citizen.complaints.index', compact('complaints'));
+        return view('citizen.complaints.index', compact('complaints', 'categories'));
     }
+
 
     public function create(): View
     {
