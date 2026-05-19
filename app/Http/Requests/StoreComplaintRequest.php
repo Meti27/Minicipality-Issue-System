@@ -118,7 +118,7 @@ class StoreComplaintRequest extends FormRequest
 
     private function loadResizedGrayscale(string $path, int $size = 16): ?array
     {
-        if (!file_exists($path)) {
+        if (!extension_loaded('gd') || !file_exists($path)) {
             return null;
         }
 
