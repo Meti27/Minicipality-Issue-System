@@ -88,30 +88,55 @@
                             <p class="mt-1.5 text-xs text-red-600">{{ $message }}</p>
                         @enderror
                     </div>
+<div>
+    <label for="image" class="block text-sm font-semibold text-gray-700 mb-1.5">
+        Photo <span class="text-red-500">*</span>
+    </label>
 
-                    <div>
-                        <label for="image" class="block text-sm font-semibold text-gray-700 mb-1.5">
-                            Photo <span class="text-red-500">*</span>
-                        </label>
-                        <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-200 border-dashed rounded-lg hover:border-blue-400 transition-colors @error('image') border-red-400 @enderror">
-                            <div class="space-y-1 text-center">
-                                <svg class="mx-auto h-10 w-10 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                </svg>
-                                <div class="flex text-sm text-gray-500 justify-center">
-                                    <label for="image" class="relative cursor-pointer rounded-md font-semibold text-blue-600 hover:text-blue-500 focus-within:outline-none">
-                                        <span>Upload a photo</span>
-                                        <input id="image" name="image" type="file" accept="image/*" class="sr-only">
-                                    </label>
-                                    <p class="pl-1">or drag and drop</p>
-                                </div>
-                                <p class="text-xs text-gray-400">JPG, PNG or GIF — max 2 MB</p>
-                            </div>
-                        </div>
-                        @error('image')
-                            <p class="mt-1.5 text-xs text-red-600">{{ $message }}</p>
-                        @enderror
-                    </div>
+    <div class="mt-1 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
+        
+        <input
+            id="image"
+            name="image"
+            type="file"
+            accept="image/*"
+            class="block w-full text-sm text-gray-500
+                   file:mr-4 file:py-2 file:px-4
+                   file:rounded-md file:border-0
+                   file:text-sm file:font-semibold
+                   file:bg-blue-50 file:text-blue-700
+                   hover:file:bg-blue-100"
+        >
+
+        <p class="mt-2 text-xs text-gray-400">
+            JPG, PNG or GIF — max 2 MB
+        </p>
+
+        {{-- Image Preview --}}
+        <div class="mt-4 flex justify-center">
+            <img id="preview"
+                 src="#"
+                 alt="Preview"
+                 class="hidden max-h-64 rounded-lg shadow-md border border-gray-200">
+        </div>
+    </div>
+
+    @error('image')
+        <p class="mt-1.5 text-xs text-red-600">{{ $message }}</p>
+    @enderror
+</div>
+
+<script>
+    document.getElementById('image').addEventListener('change', function (event) {
+        const preview = document.getElementById('preview');
+        const file = event.target.files[0];
+
+        if (file) {
+            preview.src = URL.createObjectURL(file);
+            preview.classList.remove('hidden');
+        }
+    });
+</script>
 
                     <div class="flex items-center justify-between pt-2 border-t border-gray-100">
                         <a href="{{ route('citizen.dashboard') }}"
