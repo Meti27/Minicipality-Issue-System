@@ -91,7 +91,7 @@
 
                     <div>
                         <label for="image" class="block text-sm font-semibold text-gray-700 mb-1.5">
-                            Photo <span class="text-gray-400 font-normal text-xs">(optional)</span>
+                            Photo <span class="text-red-500">*</span>
                         </label>
                         <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-200 border-dashed rounded-lg hover:border-blue-400 transition-colors @error('image') border-red-400 @enderror">
                             <div class="space-y-1 text-center">

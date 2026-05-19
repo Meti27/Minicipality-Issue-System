@@ -21,7 +21,8 @@
       "Bash(php -l /home/meti/PhpstormProjects/MunicipalityIssueSystem/app/Http/Controllers/Admin/UserController.php)",
       "Bash(php -l /home/meti/PhpstormProjects/MunicipalityIssueSystem/app/Http/Controllers/Admin/CategoryController.php)",
       "Bash(php -l /home/meti/PhpstormProjects/MunicipalityIssueSystem/app/Http/Controllers/Citizen/NotificationController.php)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(xargs ls)"
     ]
   }
 }
