@@ -1,0 +1,82 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "Municipality IS" [ref=e7] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/dashboard
+          - img [ref=e9]
+          - generic [ref=e11]: Municipality IS
+        - generic [ref=e12]:
+          - link "Dashboard" [ref=e13] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/citizen/dashboard
+          - link "My Complaints" [ref=e14] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/citizen/complaints
+          - link "Submit" [ref=e15] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/citizen/complaints/create
+            - img [ref=e16]
+            - text: Submit
+      - generic [ref=e18]:
+        - button "8" [ref=e20] [cursor=pointer]:
+          - img [ref=e21]
+          - generic [ref=e23]: "8"
+        - button "A Alice Brennan Citizen" [ref=e26] [cursor=pointer]:
+          - generic [ref=e27]: A
+          - generic [ref=e28]: Alice Brennan
+          - generic [ref=e29]: Citizen
+          - img [ref=e30]
+  - banner [ref=e32]:
+    - generic [ref=e34]:
+      - link [ref=e35] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/citizen/dashboard
+        - img [ref=e36]
+      - generic [ref=e38]:
+        - heading "Submit a Complaint" [level=2] [ref=e39]
+        - paragraph [ref=e40]: Describe the issue and we'll get it to the right team
+  - main [ref=e41]:
+    - generic [ref=e44]:
+      - paragraph [ref=e46]:
+        - img [ref=e47]
+        - text: Fields marked with
+        - generic [ref=e49]: "*"
+        - text: are required
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]: Title *
+          - textbox "Title *" [ref=e53]:
+            - /placeholder: Brief description of the issue, e.g. Large pothole on Main Street
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Category *
+            - combobox "Category *" [ref=e57]:
+              - option "— Select a category —" [selected]
+              - option "Damaged Roads"
+              - option "Garbage"
+              - option "Potholes"
+              - option "Streetlights"
+              - option "Water Leaks"
+          - generic [ref=e58]:
+            - generic [ref=e59]: Location *
+            - textbox "Location *" [ref=e60]:
+              - /placeholder: Street address or area
+        - generic [ref=e61]:
+          - generic [ref=e62]: Description *
+          - textbox "Description *" [ref=e63]:
+            - /placeholder: Describe the issue in detail — how severe it is, how long it's been there, any safety hazards...
+        - generic [ref=e64]:
+          - generic [ref=e65]: Photo *
+          - generic [ref=e67]:
+            - img [ref=e68]
+            - generic [ref=e70]:
+              - generic [ref=e71] [cursor=pointer]:
+                - text: Upload a photo
+                - button "Photo * Upload a photo" [ref=e72]
+              - paragraph [ref=e73]: or drag and drop
+            - paragraph [ref=e74]: JPG, PNG or GIF — max 2 MB
+        - generic [ref=e75]:
+          - link "Cancel" [ref=e76] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/citizen/dashboard
+            - img [ref=e77]
+            - text: Cancel
+          - button "Submit Complaint" [ref=e79] [cursor=pointer]:
+            - img [ref=e80]
+            - text: Submit Complaint
