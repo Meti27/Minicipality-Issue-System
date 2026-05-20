@@ -1,0 +1,112 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - link "Municipality IS" [ref=e8] [cursor=pointer]:
+            - /url: http://localhost:8000/dashboard
+            - img [ref=e10]
+            - generic [ref=e12]: Municipality IS
+          - generic [ref=e13]:
+            - link "Dashboard" [ref=e14] [cursor=pointer]:
+              - /url: http://localhost:8000/citizen/dashboard
+            - link "My Complaints" [ref=e15] [cursor=pointer]:
+              - /url: http://localhost:8000/citizen/complaints
+            - link "Submit" [ref=e16] [cursor=pointer]:
+              - /url: http://localhost:8000/citizen/complaints/create
+              - img [ref=e17]
+              - text: Submit
+        - generic [ref=e19]:
+          - button "Notifications 7" [ref=e21] [cursor=pointer]:
+            - img "Notifications" [ref=e22]
+            - generic [ref=e24]: "7"
+          - button "F Fatima Nkosi Citizen" [ref=e27] [cursor=pointer]:
+            - generic [ref=e28]: F
+            - generic [ref=e29]: Fatima Nkosi
+            - generic [ref=e30]: Citizen
+            - img [ref=e31]
+    - banner [ref=e33]:
+      - generic [ref=e35]:
+        - heading "My Complaints" [level=2] [ref=e36]
+        - link "Submit New" [ref=e37] [cursor=pointer]:
+          - /url: http://localhost:8000/citizen/complaints/create
+          - img [ref=e38]
+          - text: Submit New
+    - main [ref=e40]:
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - button "By Status" [ref=e45] [cursor=pointer]
+            - button "By Category" [ref=e46] [cursor=pointer]
+            - button "By Date" [ref=e47] [cursor=pointer]
+          - generic [ref=e49]:
+            - generic [ref=e50]: Status
+            - combobox "Status" [ref=e51]:
+              - option "All statuses" [selected]
+              - option "Submitted"
+              - option "In Progress"
+              - option "Resolved"
+              - option "Rejected"
+        - table [ref=e54]:
+          - rowgroup [ref=e55]:
+            - row "Title Category Status Submitted" [ref=e56]:
+              - columnheader "Title" [ref=e57]
+              - columnheader "Category" [ref=e58]
+              - columnheader "Status" [ref=e59]
+              - columnheader "Submitted" [ref=e60]
+              - columnheader [ref=e61]
+          - rowgroup [ref=e62]:
+            - row "Three streetlights out on Maple Drive Maple Drive, between house numbers 12 and 34 Streetlights Pending review 15 May 2026 View" [ref=e63]:
+              - cell "Three streetlights out on Maple Drive Maple Drive, between house numbers 12 and 34" [ref=e64]:
+                - paragraph [ref=e65]: Three streetlights out on Maple Drive
+                - paragraph [ref=e66]: Maple Drive, between house numbers 12 and 34
+              - cell "Streetlights" [ref=e67]
+              - cell "Pending review" [ref=e68]:
+                - generic [ref=e69]: Pending review
+              - cell "15 May 2026" [ref=e71]
+              - cell "View" [ref=e72]:
+                - link "View" [ref=e73] [cursor=pointer]:
+                  - /url: http://localhost:8000/citizen/complaints/3
+                  - text: View
+                  - img [ref=e74]
+            - row "Multiple potholes on Station Road Station Road, between stops 3 and 5 Potholes In progress 15 May 2026 View" [ref=e76]:
+              - cell "Multiple potholes on Station Road Station Road, between stops 3 and 5" [ref=e77]:
+                - paragraph [ref=e78]: Multiple potholes on Station Road
+                - paragraph [ref=e79]: Station Road, between stops 3 and 5
+              - cell "Potholes" [ref=e80]
+              - cell "In progress" [ref=e81]:
+                - generic [ref=e82]: In progress
+              - cell "15 May 2026" [ref=e84]
+              - cell "View" [ref=e85]:
+                - link "View" [ref=e86] [cursor=pointer]:
+                  - /url: http://localhost:8000/citizen/complaints/6
+                  - text: View
+                  - img [ref=e87]
+            - row "Dripping fire hydrant on Cedar Close Cedar Close, near cul-de-sac Water Leaks Resolved 15 May 2026 View" [ref=e89]:
+              - cell "Dripping fire hydrant on Cedar Close Cedar Close, near cul-de-sac" [ref=e90]:
+                - paragraph [ref=e91]: Dripping fire hydrant on Cedar Close
+                - paragraph [ref=e92]: Cedar Close, near cul-de-sac
+              - cell "Water Leaks" [ref=e93]
+              - cell "Resolved" [ref=e94]:
+                - generic [ref=e95]: Resolved
+              - cell "15 May 2026" [ref=e97]
+              - cell "View" [ref=e98]:
+                - link "View" [ref=e99] [cursor=pointer]:
+                  - /url: http://localhost:8000/citizen/complaints/9
+                  - text: View
+                  - img [ref=e100]
+            - row "No streetlight at bus stop on King Road King Road, Bus Stop 14 Streetlights Submitted 15 May 2026 View" [ref=e102]:
+              - cell "No streetlight at bus stop on King Road King Road, Bus Stop 14" [ref=e103]:
+                - paragraph [ref=e104]: No streetlight at bus stop on King Road
+                - paragraph [ref=e105]: King Road, Bus Stop 14
+              - cell "Streetlights" [ref=e106]
+              - cell "Submitted" [ref=e107]:
+                - generic [ref=e108]: Submitted
+              - cell "15 May 2026" [ref=e110]
+              - cell "View" [ref=e111]:
+                - link "View" [ref=e112] [cursor=pointer]:
+                  - /url: http://localhost:8000/citizen/complaints/12
+                  - text: View
+                  - img [ref=e113]

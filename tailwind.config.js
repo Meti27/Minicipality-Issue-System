@@ -14,6 +14,15 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                muni: {
+                    dark:   '#355872',
+                    mid:    '#7AAACE',
+                    light:  '#9CD5FF',
+                    cream:  '#F7F8F0',
+                    darker: '#2a4760',
+                },
+            },
         },
     },
 

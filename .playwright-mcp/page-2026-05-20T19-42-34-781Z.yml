@@ -1,0 +1,36 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - link "Municipality IS" [ref=e8] [cursor=pointer]:
+            - /url: http://localhost:8000/dashboard
+            - img [ref=e10]
+            - generic [ref=e12]: Municipality IS
+          - generic [ref=e13]:
+            - link "Dashboard" [ref=e14] [cursor=pointer]:
+              - /url: http://localhost:8000/citizen/dashboard
+            - link "My Complaints" [ref=e15] [cursor=pointer]:
+              - /url: http://localhost:8000/citizen/complaints
+            - link "Submit" [ref=e16] [cursor=pointer]:
+              - /url: http://localhost:8000/citizen/complaints/create
+              - img [ref=e17]
+              - text: Submit
+        - generic [ref=e19]:
+          - button "Notifications 7" [ref=e21] [cursor=pointer]:
+            - img "Notifications" [ref=e22]
+            - generic [ref=e24]: "7"
+          - button "F Fatima Nkosi Citizen" [ref=e27] [cursor=pointer]:
+            - generic [ref=e28]: F
+            - generic [ref=e29]: Fatima Nkosi
+            - generic [ref=e30]: Citizen
+            - img [ref=e31]
+    - main [ref=e33]:
+      - generic [ref=e35]:
+        - paragraph [ref=e36]: "403"
+        - heading "Access Denied" [level=1] [ref=e37]
+        - paragraph [ref=e38]: You don't have permission to view this page.
+        - link "← Back to Dashboard" [ref=e39] [cursor=pointer]:
+          - /url: http://localhost:8000/dashboard

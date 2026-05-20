@@ -1,0 +1,122 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: http://localhost:8000/dashboard
+          - img [ref=e10]
+        - button "F" [ref=e14] [cursor=pointer]
+    - navigation "Mobile navigation" [ref=e15]:
+      - generic [ref=e16]:
+        - link "Home" [ref=e17] [cursor=pointer]:
+          - /url: http://localhost:8000/citizen/dashboard
+          - img [ref=e18]
+          - generic [ref=e20]: Home
+        - link "Complaints" [ref=e21] [cursor=pointer]:
+          - /url: http://localhost:8000/citizen/complaints
+          - img [ref=e22]
+          - generic [ref=e24]: Complaints
+        - link "Submit" [ref=e25] [cursor=pointer]:
+          - /url: http://localhost:8000/citizen/complaints/create
+          - img [ref=e27]
+          - generic [ref=e29]: Submit
+        - link "7 Alerts" [ref=e30] [cursor=pointer]:
+          - /url: http://localhost:8000/citizen/notifications
+          - generic [ref=e31]:
+            - img [ref=e32]
+            - generic [ref=e34]: "7"
+          - generic [ref=e35]: Alerts
+        - link "Profile" [ref=e36] [cursor=pointer]:
+          - /url: http://localhost:8000/profile
+          - img [ref=e37]
+          - generic [ref=e39]: Profile
+    - banner [ref=e40]:
+      - generic [ref=e43]:
+        - paragraph [ref=e44]: My Complaints
+        - heading "Issue History" [level=2] [ref=e45]
+    - main [ref=e46]:
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - button "By Status" [ref=e51] [cursor=pointer]
+            - button "By Category" [ref=e52] [cursor=pointer]
+            - button "By Date" [ref=e53] [cursor=pointer]
+          - generic [ref=e55]:
+            - generic [ref=e56]: Status
+            - combobox "Status" [ref=e57]:
+              - option "All statuses" [selected]
+              - option "Submitted"
+              - option "In Progress"
+              - option "Resolved"
+              - option "Rejected"
+        - generic [ref=e58]:
+          - link "Three streetlights out on Maple Drive Pending review Streetlights • 15 May 2026 Maple Drive, between house numbers 12 and 34 View details" [ref=e59] [cursor=pointer]:
+            - /url: http://localhost:8000/citizen/complaints/3
+            - generic [ref=e60]:
+              - paragraph [ref=e61]: Three streetlights out on Maple Drive
+              - generic [ref=e62]: Pending review
+            - generic [ref=e64]:
+              - generic [ref=e65]:
+                - img [ref=e66]
+                - text: Streetlights
+              - generic [ref=e68]: •
+              - generic [ref=e69]: 15 May 2026
+            - paragraph [ref=e70]:
+              - img [ref=e71]
+              - text: Maple Drive, between house numbers 12 and 34
+            - generic [ref=e75]:
+              - text: View details
+              - img [ref=e76]
+          - link "Multiple potholes on Station Road In progress Potholes • 15 May 2026 Station Road, between stops 3 and 5 View details" [ref=e78] [cursor=pointer]:
+            - /url: http://localhost:8000/citizen/complaints/6
+            - generic [ref=e79]:
+              - paragraph [ref=e80]: Multiple potholes on Station Road
+              - generic [ref=e81]: In progress
+            - generic [ref=e83]:
+              - generic [ref=e84]:
+                - img [ref=e85]
+                - text: Potholes
+              - generic [ref=e87]: •
+              - generic [ref=e88]: 15 May 2026
+            - paragraph [ref=e89]:
+              - img [ref=e90]
+              - text: Station Road, between stops 3 and 5
+            - generic [ref=e94]:
+              - text: View details
+              - img [ref=e95]
+          - link "Dripping fire hydrant on Cedar Close Resolved Water Leaks • 15 May 2026 Cedar Close, near cul-de-sac View details" [ref=e97] [cursor=pointer]:
+            - /url: http://localhost:8000/citizen/complaints/9
+            - generic [ref=e98]:
+              - paragraph [ref=e99]: Dripping fire hydrant on Cedar Close
+              - generic [ref=e100]: Resolved
+            - generic [ref=e102]:
+              - generic [ref=e103]:
+                - img [ref=e104]
+                - text: Water Leaks
+              - generic [ref=e106]: •
+              - generic [ref=e107]: 15 May 2026
+            - paragraph [ref=e108]:
+              - img [ref=e109]
+              - text: Cedar Close, near cul-de-sac
+            - generic [ref=e113]:
+              - text: View details
+              - img [ref=e114]
+          - link "No streetlight at bus stop on King Road Submitted Streetlights • 15 May 2026 King Road, Bus Stop 14 View details" [ref=e116] [cursor=pointer]:
+            - /url: http://localhost:8000/citizen/complaints/12
+            - generic [ref=e117]:
+              - paragraph [ref=e118]: No streetlight at bus stop on King Road
+              - generic [ref=e119]: Submitted
+            - generic [ref=e121]:
+              - generic [ref=e122]:
+                - img [ref=e123]
+                - text: Streetlights
+              - generic [ref=e125]: •
+              - generic [ref=e126]: 15 May 2026
+            - paragraph [ref=e127]:
+              - img [ref=e128]
+              - text: King Road, Bus Stop 14
+            - generic [ref=e132]:
+              - text: View details
+              - img [ref=e133]

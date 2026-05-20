@@ -1,0 +1,113 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - link "Municipality IS" [ref=e8] [cursor=pointer]:
+            - /url: http://localhost:8000/dashboard
+            - img [ref=e10]
+            - generic [ref=e12]: Municipality IS
+          - generic [ref=e13]:
+            - link "Dashboard" [ref=e14] [cursor=pointer]:
+              - /url: http://localhost:8000/citizen/dashboard
+            - link "My Complaints" [ref=e15] [cursor=pointer]:
+              - /url: http://localhost:8000/citizen/complaints
+            - link "Submit" [ref=e16] [cursor=pointer]:
+              - /url: http://localhost:8000/citizen/complaints/create
+              - img [ref=e17]
+              - text: Submit
+        - generic [ref=e19]:
+          - button "Notifications 7" [ref=e21] [cursor=pointer]:
+            - img "Notifications" [ref=e22]
+            - generic [ref=e24]: "7"
+          - button "F Fatima Nkosi Citizen" [ref=e27] [cursor=pointer]:
+            - generic [ref=e28]: F
+            - generic [ref=e29]: Fatima Nkosi
+            - generic [ref=e30]: Citizen
+            - img [ref=e31]
+    - banner [ref=e33]:
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - paragraph [ref=e37]: Citizen Portal
+          - heading "Welcome back, Fatima Nkosi" [level=2] [ref=e38]
+        - link "New Complaint" [ref=e39] [cursor=pointer]:
+          - /url: http://localhost:8000/citizen/complaints/create
+          - img [ref=e40]
+          - text: New Complaint
+    - main [ref=e42]:
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - img [ref=e48]
+            - paragraph [ref=e50]: "4"
+            - paragraph [ref=e51]: Total
+          - generic [ref=e52]:
+            - img [ref=e54]
+            - paragraph [ref=e56]: "1"
+            - paragraph [ref=e57]: Submitted
+          - generic [ref=e58]:
+            - img [ref=e60]
+            - paragraph [ref=e62]: "1"
+            - paragraph [ref=e63]: In Progress
+          - generic [ref=e64]:
+            - img [ref=e66]
+            - paragraph [ref=e68]: "1"
+            - paragraph [ref=e69]: Resolved
+          - generic [ref=e70]:
+            - img [ref=e72]
+            - paragraph [ref=e74]: "0"
+            - paragraph [ref=e75]: Rejected
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - generic [ref=e78]:
+              - heading "Recent Complaints" [level=3] [ref=e79]
+              - paragraph [ref=e80]: Your latest submitted issues
+            - link "View all →" [ref=e81] [cursor=pointer]:
+              - /url: http://localhost:8000/citizen/complaints
+          - list [ref=e82]:
+            - listitem [ref=e83]:
+              - link "Three streetlights out on Maple Drive Streetlights • 4 days ago Pending review" [ref=e84] [cursor=pointer]:
+                - /url: http://localhost:8000/citizen/complaints/3
+                - generic [ref=e85]:
+                  - img [ref=e87]
+                  - generic [ref=e89]:
+                    - paragraph [ref=e90]: Three streetlights out on Maple Drive
+                    - paragraph [ref=e91]: Streetlights • 4 days ago
+                - generic [ref=e92]:
+                  - generic [ref=e93]: Pending review
+                  - img [ref=e95]
+            - listitem [ref=e97]:
+              - link "Multiple potholes on Station Road Potholes • 4 days ago In progress" [ref=e98] [cursor=pointer]:
+                - /url: http://localhost:8000/citizen/complaints/6
+                - generic [ref=e99]:
+                  - img [ref=e101]
+                  - generic [ref=e103]:
+                    - paragraph [ref=e104]: Multiple potholes on Station Road
+                    - paragraph [ref=e105]: Potholes • 4 days ago
+                - generic [ref=e106]:
+                  - generic [ref=e107]: In progress
+                  - img [ref=e109]
+            - listitem [ref=e111]:
+              - link "Dripping fire hydrant on Cedar Close Water Leaks • 4 days ago Resolved" [ref=e112] [cursor=pointer]:
+                - /url: http://localhost:8000/citizen/complaints/9
+                - generic [ref=e113]:
+                  - img [ref=e115]
+                  - generic [ref=e117]:
+                    - paragraph [ref=e118]: Dripping fire hydrant on Cedar Close
+                    - paragraph [ref=e119]: Water Leaks • 4 days ago
+                - generic [ref=e120]:
+                  - generic [ref=e121]: Resolved
+                  - img [ref=e123]
+            - listitem [ref=e125]:
+              - link "No streetlight at bus stop on King Road Streetlights • 4 days ago Submitted" [ref=e126] [cursor=pointer]:
+                - /url: http://localhost:8000/citizen/complaints/12
+                - generic [ref=e127]:
+                  - img [ref=e129]
+                  - generic [ref=e131]:
+                    - paragraph [ref=e132]: No streetlight at bus stop on King Road
+                    - paragraph [ref=e133]: Streetlights • 4 days ago
+                - generic [ref=e134]:
+                  - generic [ref=e135]: Submitted
+                  - img [ref=e137]

@@ -1,0 +1,87 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Municipality IS" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+        - generic [ref=e8]: Municipality IS
+      - generic [ref=e9]:
+        - link "Sign In" [ref=e10] [cursor=pointer]:
+          - /url: http://localhost:8000/login
+        - link "Get Started" [ref=e11] [cursor=pointer]:
+          - /url: http://localhost:8000/register
+  - generic [ref=e13]:
+    - generic [ref=e15]:
+      - img [ref=e17]
+      - generic [ref=e19]:
+        - paragraph [ref=e20]: Municipality IS
+        - paragraph [ref=e21]: Complaint Tracking System
+    - generic [ref=e22]:
+      - generic [ref=e23]: Open to all citizens · Free to use
+      - heading "Report. Track. Resolve." [level=1] [ref=e25]:
+        - text: Report.
+        - text: Track.
+        - text: Resolve.
+      - paragraph [ref=e26]: Submit infrastructure issues — potholes, broken streetlights, water leaks — and follow every step from submission to resolution.
+      - generic [ref=e27]:
+        - link "Register as a Citizen" [ref=e28] [cursor=pointer]:
+          - /url: http://localhost:8000/register
+          - text: Register as a Citizen
+          - img [ref=e29]
+        - link "Sign In" [ref=e31] [cursor=pointer]:
+          - /url: http://localhost:8000/login
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - img [ref=e35]
+        - generic [ref=e38]: municipality.gov.example
+      - generic [ref=e39]:
+        - img [ref=e40]
+        - generic [ref=e42]: +1 (555) 000-0000
+      - generic [ref=e43]:
+        - img [ref=e44]
+        - generic [ref=e47]: City Hall, Main Street
+  - generic [ref=e49]:
+    - generic [ref=e50]:
+      - paragraph [ref=e51]: How it works
+      - heading "Everything you need to report issues." [level=2] [ref=e52]:
+        - text: Everything you need
+        - text: to report issues.
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e56]: "01"
+        - heading "Easy Submission" [level=3] [ref=e57]
+        - paragraph [ref=e58]: Fill in a simple form with a title, location, and photo. Your complaint is logged instantly and tracked.
+      - generic [ref=e59]:
+        - generic [ref=e61]: "02"
+        - heading "Real-Time Tracking" [level=3] [ref=e62]
+        - paragraph [ref=e63]: Watch your complaint move through review, validation, and resolution with full timestamped history.
+      - generic [ref=e64]:
+        - generic [ref=e66]: "03"
+        - heading "Instant Notifications" [level=3] [ref=e67]
+        - paragraph [ref=e68]: Receive in-app notifications every time municipality staff updates your complaint status.
+  - generic [ref=e70]:
+    - generic [ref=e71]:
+      - paragraph [ref=e72]: Complaint Lifecycle
+      - heading "Every complaint, fully traceable" [level=2] [ref=e73]
+    - generic [ref=e74]:
+      - generic [ref=e75]: Submitted
+      - img [ref=e76]
+      - generic [ref=e78]: Pending Review
+      - img [ref=e79]
+      - generic [ref=e81]: Validated
+      - img [ref=e82]
+      - generic [ref=e84]: In Progress
+      - img [ref=e85]
+      - generic [ref=e87]: Resolved
+      - img [ref=e88]
+      - generic [ref=e90]: Closed
+  - generic [ref=e92]:
+    - heading "Ready to report an issue?" [level=2] [ref=e93]:
+      - text: Ready to report
+      - text: an issue?
+    - paragraph [ref=e94]: Join citizens already using the platform to improve their community.
+    - link "Get Started — It's Free" [ref=e95] [cursor=pointer]:
+      - /url: http://localhost:8000/register
+      - text: Get Started — It's Free
+      - img [ref=e96]
+  - contentinfo [ref=e98]: © 2026 Municipality Issue System — University Software Engineering Project.

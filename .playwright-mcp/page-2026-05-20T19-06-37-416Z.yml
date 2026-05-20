@@ -1,0 +1,90 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Municipality IS" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+        - generic [ref=e8]: Municipality IS
+      - link "Go to Dashboard" [ref=e10] [cursor=pointer]:
+        - /url: http://localhost:8000/dashboard
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e14]:
+        - img [ref=e16]
+        - generic [ref=e18]:
+          - paragraph [ref=e19]: Municipality IS
+          - paragraph [ref=e20]: Complaint Tracking System
+      - generic [ref=e21]:
+        - heading "Report. Track. Resolve." [level=1] [ref=e22]:
+          - text: Report.
+          - text: Track.
+          - text: Resolve.
+        - paragraph [ref=e24]: Submit infrastructure issues — potholes, broken streetlights, water leaks — and follow every step from submission to resolution.
+        - link "Go to Dashboard" [ref=e26] [cursor=pointer]:
+          - /url: http://localhost:8000/dashboard
+          - text: Go to Dashboard
+          - img [ref=e27]
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - img [ref=e32]
+          - generic [ref=e35]: municipality.gov.example
+        - generic [ref=e36]:
+          - img [ref=e37]
+          - generic [ref=e39]: +1 (555) 000-0000
+        - generic [ref=e40]:
+          - img [ref=e41]
+          - generic [ref=e44]: City Hall, Main Street
+    - generic [ref=e45]:
+      - img [ref=e47]
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - img [ref=e52]
+          - generic [ref=e54]:
+            - paragraph [ref=e55]: "6"
+            - paragraph [ref=e56]: Issue Categories
+        - generic [ref=e57]:
+          - img [ref=e59]
+          - generic [ref=e61]:
+            - paragraph [ref=e62]: 100%
+            - paragraph [ref=e63]: Transparent Process
+        - generic [ref=e64]:
+          - img [ref=e66]
+          - generic [ref=e68]:
+            - paragraph [ref=e69]: 24/7
+            - paragraph [ref=e70]: Online Tracking
+  - generic [ref=e72]:
+    - generic [ref=e73]:
+      - paragraph [ref=e74]: How it works
+      - heading "Everything you need to report issues." [level=2] [ref=e75]:
+        - text: Everything you need
+        - text: to report issues.
+    - generic [ref=e77]:
+      - generic [ref=e78]:
+        - generic [ref=e80]: "01"
+        - heading "Easy Submission" [level=3] [ref=e81]
+        - paragraph [ref=e82]: Fill in a simple form with a title, location, and photo. Your complaint is logged instantly and tracked.
+      - generic [ref=e83]:
+        - generic [ref=e85]: "02"
+        - heading "Real-Time Tracking" [level=3] [ref=e86]
+        - paragraph [ref=e87]: Watch your complaint move through review, validation, and resolution with full timestamped history.
+      - generic [ref=e88]:
+        - generic [ref=e90]: "03"
+        - heading "Instant Notifications" [level=3] [ref=e91]
+        - paragraph [ref=e92]: Receive in-app notifications every time municipality staff updates your complaint status.
+  - generic [ref=e94]:
+    - generic [ref=e95]:
+      - paragraph [ref=e96]: Complaint Lifecycle
+      - heading "Every complaint, fully traceable" [level=2] [ref=e97]
+    - generic [ref=e98]:
+      - generic [ref=e99]: Submitted
+      - img [ref=e100]
+      - generic [ref=e102]: Pending Review
+      - img [ref=e103]
+      - generic [ref=e105]: Validated
+      - img [ref=e106]
+      - generic [ref=e108]: In Progress
+      - img [ref=e109]
+      - generic [ref=e111]: Resolved
+      - img [ref=e112]
+      - generic [ref=e114]: Closed
+  - contentinfo [ref=e115]: © 2026 Municipality Issue System — University Software Engineering Project.
