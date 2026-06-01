@@ -37,7 +37,7 @@
 
         <p class="text-center text-sm text-gray-500">
             Already have an account?
-            <a href="{{ route('login') }}" class="text-blue-600 font-medium hover:underline">Sign in</a>
+            <a href="{{ route('login') }}" class="text-muni-dark font-medium hover:underline">Sign in</a>
         </p>
     </form>
 </x-guest-layout>

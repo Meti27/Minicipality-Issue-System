@@ -19,7 +19,7 @@
             <div class="flex items-center justify-between mb-1">
                 <x-input-label for="password" :value="__('Password')" />
                 @if (Route::has('password.request'))
-                    <a class="text-xs text-blue-600 hover:text-blue-800 hover:underline" href="{{ route('password.request') }}">
+                    <a class="text-xs text-muni-dark hover:text-muni-darker hover:underline" href="{{ route('password.request') }}">
                         Forgot password?
                     </a>
                 @endif
@@ -29,7 +29,7 @@
         </div>
 
         <div class="flex items-center">
-            <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-blue-600 shadow-sm focus:ring-blue-500" name="remember">
+            <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-muni-dark shadow-sm focus:ring-muni-mid" name="remember">
             <label for="remember_me" class="ms-2 text-sm text-gray-600">{{ __('Remember me') }}</label>
         </div>
 
@@ -39,7 +39,7 @@
 
         <p class="text-center text-sm text-gray-500">
             Don't have an account?
-            <a href="{{ route('register') }}" class="text-blue-600 font-medium hover:underline">Register here</a>
+            <a href="{{ route('register') }}" class="text-muni-dark font-medium hover:underline">Register here</a>
         </p>
     </form>
 </x-guest-layout>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Staff;
 
+use App\Events\ComplaintStatusUpdated;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UpdateComplaintStatusRequest;
 use App\Models\Complaint;
@@ -112,6 +113,16 @@ class ComplaintController extends Controller
             'complaint_id' => $complaint->id,
             'message'      => "Your complaint \"{$complaint->title}\" has been updated to: " . ucfirst(str_replace('_', ' ', $newStatus)) . '.',
         ]);
+
+        ComplaintStatusUpdated::dispatch(
+            complaintId: $complaint->id,
+            oldStatus: $oldStatus,
+            newStatus: $newStatus,
+            comment: $request->validated()['comment'] ?? null,
+            changedByName: auth()->user()->name,
+            timestamp: now()->format('d M Y, H:i'),
+            rejectionReason: $newStatus === 'rejected' ? ($request->validated()['rejection_reason'] ?? null) : null,
+        );
 
         return redirect()->route('staff.complaints.show', $complaint)
             ->with('success', 'Complaint status updated successfully.');

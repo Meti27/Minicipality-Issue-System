@@ -16,7 +16,7 @@
         <div class="min-h-screen flex">
 
             {{-- Left branding panel --}}
-            <div class="hidden lg:flex lg:w-5/12 xl:w-1/2 bg-gradient-to-br from-blue-700 via-blue-600 to-indigo-700 flex-col items-center justify-center p-12 relative overflow-hidden">
+            <div class="hidden lg:flex lg:w-5/12 xl:w-1/2 bg-gradient-to-br from-muni-darker via-muni-dark to-muni-dark flex-col items-center justify-center p-12 relative overflow-hidden">
                 <div class="absolute top-1/4 -left-16 w-64 h-64 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
                 <div class="absolute bottom-1/4 right-0 w-72 h-72 bg-indigo-900/20 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -67,8 +67,8 @@
             <div class="flex-1 flex flex-col items-center justify-center p-6 sm:p-12 bg-white">
                 {{-- Mobile logo --}}
                 <div class="lg:hidden mb-8 text-center">
-                    <a href="/" class="inline-flex items-center gap-2 text-blue-700 font-bold text-xl">
-                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <a href="/" class="inline-flex items-center gap-2 text-muni-dark font-bold text-xl">
+                        <div class="w-8 h-8 bg-muni-dark rounded-lg flex items-center justify-center">
                             <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
                             </svg>
