@@ -643,3 +643,8 @@ If a complaint has an image and is deleted (via cascade), the physical file in `
 
 ### `is_active` toggle for categories does not cascade
 Deactivating a category hides it from the citizen submit form, but existing complaints that already reference it are unaffected. Reactivating works as expected.
+
+Contributors: 
+Muhamed Iseni
+Blenda Fazliji
+Kanita Bajrami
