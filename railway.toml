@@ -3,8 +3,8 @@ builder = "NIXPACKS"
 buildCommand = "npm install && npm run build && composer install --no-dev --optimize-autoloader --ignore-platform-reqs && php artisan config:cache && php artisan route:cache && php artisan view:cache"
 
 [deploy]
-startCommand = "php artisan config:clear && php artisan migrate --force && php artisan storage:link && php artisan serve --host=0.0.0.0 --port=$PORT"
-healthcheckPath = "/up"
-healthcheckTimeout = 300
+# Both the web and reverb services deploy from this same file. Set SERVICE_ROLE=reverb
+# on the reverb service so it launches the WebSocket server; otherwise it runs the web app.
+startCommand = "if [ \"$SERVICE_ROLE\" = reverb ]; then php artisan reverb:start --host=0.0.0.0 --port=$PORT; else php artisan config:clear && php artisan migrate --force && php artisan storage:link && php artisan serve --host=0.0.0.0 --port=$PORT; fi"
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
