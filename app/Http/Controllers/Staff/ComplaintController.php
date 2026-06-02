@@ -9,6 +9,7 @@ use App\Models\Complaint;
 use App\Models\ComplaintStatusHistory;
 use App\Models\Notification;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Log;
 use Illuminate\View\View;
 
 class ComplaintController extends Controller
@@ -114,15 +115,24 @@ class ComplaintController extends Controller
             'message'      => "Your complaint \"{$complaint->title}\" has been updated to: " . ucfirst(str_replace('_', ' ', $newStatus)) . '.',
         ]);
 
-        ComplaintStatusUpdated::dispatch(
-            $complaint->id,
-            $oldStatus,
-            $newStatus,
-            $request->validated()['comment'] ?? null,
-            auth()->user()->name,
-            now()->format('d M Y, H:i'),
-            $newStatus === 'rejected' ? ($request->validated()['rejection_reason'] ?? null) : null,
-        );
+        // Broadcasting is a best-effort side effect: a Reverb/WebSocket failure
+        // must never prevent staff from updating a complaint's status.
+        try {
+            ComplaintStatusUpdated::dispatch(
+                $complaint->id,
+                $oldStatus,
+                $newStatus,
+                $request->validated()['comment'] ?? null,
+                auth()->user()->name,
+                now()->format('d M Y, H:i'),
+                $newStatus === 'rejected' ? ($request->validated()['rejection_reason'] ?? null) : null,
+            );
+        } catch (\Throwable $e) {
+            Log::warning('Failed to broadcast complaint status update', [
+                'complaint_id' => $complaint->id,
+                'error'        => $e->getMessage(),
+            ]);
+        }
 
         return redirect()->route('staff.complaints.show', $complaint)
             ->with('success', 'Complaint status updated successfully.');
