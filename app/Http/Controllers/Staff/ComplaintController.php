@@ -115,13 +115,13 @@ class ComplaintController extends Controller
         ]);
 
         ComplaintStatusUpdated::dispatch(
-            complaintId: $complaint->id,
-            oldStatus: $oldStatus,
-            newStatus: $newStatus,
-            comment: $request->validated()['comment'] ?? null,
-            changedByName: auth()->user()->name,
-            timestamp: now()->format('d M Y, H:i'),
-            rejectionReason: $newStatus === 'rejected' ? ($request->validated()['rejection_reason'] ?? null) : null,
+            $complaint->id,
+            $oldStatus,
+            $newStatus,
+            $request->validated()['comment'] ?? null,
+            auth()->user()->name,
+            now()->format('d M Y, H:i'),
+            $newStatus === 'rejected' ? ($request->validated()['rejection_reason'] ?? null) : null,
         );
 
         return redirect()->route('staff.complaints.show', $complaint)

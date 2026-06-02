@@ -1,0 +1,51 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - img [ref=e6]
+    - heading "Municipality Issue System" [level=1] [ref=e8]
+    - paragraph [ref=e9]: Submit, track, and resolve infrastructure complaints in your community — transparently and efficiently.
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - paragraph [ref=e12]: "6"
+        - paragraph [ref=e13]: Categories
+      - generic [ref=e14]:
+        - paragraph [ref=e15]: 100%
+        - paragraph [ref=e16]: Transparent
+      - generic [ref=e17]:
+        - paragraph [ref=e18]: 24/7
+        - paragraph [ref=e19]: Available
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - img [ref=e23]
+        - generic [ref=e25]: Report potholes, broken lights & more
+      - generic [ref=e26]:
+        - img [ref=e28]
+        - generic [ref=e30]: Track your complaint in real time
+      - generic [ref=e31]:
+        - img [ref=e33]
+        - generic [ref=e35]: Get notified on every status update
+  - generic [ref=e36]:
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - heading "Create your account" [level=2] [ref=e39]
+        - paragraph [ref=e40]: Join to report and track community issues
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - generic [ref=e43]: Full name
+          - textbox "Full name" [active] [ref=e44]
+        - generic [ref=e45]:
+          - generic [ref=e46]: Email address
+          - textbox "Email address" [ref=e47]
+        - generic [ref=e48]:
+          - generic [ref=e49]: Password
+          - textbox "Password" [ref=e50]
+        - generic [ref=e51]:
+          - generic [ref=e52]: Confirm password
+          - textbox "Confirm password" [ref=e53]
+        - button "Create Account" [ref=e54] [cursor=pointer]
+        - paragraph [ref=e55]:
+          - text: Already have an account?
+          - link "Sign in" [ref=e56] [cursor=pointer]:
+            - /url: http://localhost:8000/login
+    - paragraph [ref=e57]:
+      - link "← Back to home" [ref=e58] [cursor=pointer]:
+        - /url: /
